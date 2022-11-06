@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+body>div {
+    padding-top: 1em;
+}
+
+body>video {
+    background-color: beige;
+    margin-left: 5%;
+}
+
+#firstvideo {
+    width: 90%;
+    height: 90%;
+    margin: auto; 
+}
+
+#classmatefirstchoice {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmategoodchoice1 {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmatebadchoice1 {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmatesecondchoice {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmategoodchoice2 {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmatebadchoice2 {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmatethirdchoice {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmategoodchoice3 {
+    width: 75%;
+    height: 75%; 
+}
+
+#classmatebadchoice3 {
+    justify-content: center; 
+    width: 75%;
+    height: 75%; 
+}
+
+#teacherfirstchoice {
+    width: 75%;
+    height: 75%; 
+}
+
+#teachergoodchoice1 {
+    width: 75%;
+    height: 75%; 
+}
+
+#teacherbadchoice1 {
+    width: 75%;
+    height: 75%; 
+}
+
+#teachersecondchoice {
+    width: 75%;
+    height: 75%; 
+}
+
+#teachergoodchoice2 { 
+    width: 75%;
+    height: 75%; 
+}
+
+#teacherbadchoice2 {
+    width: 75%;
+    height: 75%; 
+}
+
+#teacherthirdchoice {
+    width: 90%;
+    height: 90%; 
+}
+
+#teachergoodchoice3 { 
+    width: 75%;
+    height: 75%; 
+}
+
+#teacherbadchoice3 {
+    width: 75%;
+    height: 75%; 
+}
+
+#goodendingvideo {
+    width: 75%;
+    height: 75%; 
+}
+
+#badendingvideo {
+    width: 75%;
+    height: 75%; 
+}
+
+#choosename{
+    background-color: beige;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#choosepov{
+    background-color: beige;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+#povclassmate{
+    background-color: beige;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#povclassmate1{
+    background-color: beige;
+}
+#povclassmate2{
+    background-color: beige;
+}
+#povclassmate3{
+    background-color: beige;
+}
+
+#povteachersection{
+    background-color: beige;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+#povteacher1{
+    background-color: beige;
+}
+#povteacher2{
+    background-color: beige;
+}
+#povteacher3{
+    background-color: beige;
+}
+
+#calltoaction{
+    background-color: beige;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    text-align: center;
+    display: none;
+    border-bottom: none;
+}
+
+input[type=button]{
+    background-color: lavender;
+    color: black;
+    position: relative;
+    font-size: 20px;
+    font-family: "Tahoma", sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: "Tahoma", sans-serif;
+}
+
+section {
+	display: none;
+    margin: auto;
+    border-bottom: none;
+}
+
+.show {
+	display: block !important;
+}

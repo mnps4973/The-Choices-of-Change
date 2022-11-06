@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="game.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <script src="game.js"></script>
+  </head>
+
+  <body>
+    <section style="display: block;" id="choosename">
+      <form style="display:block;" id="choosenameform">
+        <p>Enter your name: <input class="authentqql" type=text name="username">
+        </p>
+        <input type="button" value="submit" onclick="saveName(username.value);">
+      </form>
+    </section>
+
+    <section id="choosepov">
+      <center>
+        <video id="firstvideo">
+          <source src="video/intro.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="choosepovform">
+        <p id="choosepovtext">Choose the pov</p>
+        <input type="button" value="Classmate" onclick='savePov("classmate")'>
+        <input type="button" value="Teacher" onclick='savePov("teacher")'>
+      </form>
+    </section>
+
+    <section id="povclassmatesection1">
+      <center>
+        <video id="classmatefirstchoice">
+          <source src="video/classmate/classmate_choice_1.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povclassmate1">
+        <p id="usernamec1">Choose an option</p>
+        <input type="button" value="Option A: Throw ball" onclick='choiceClassmate(1,1)'>
+        <input type="button" value="Option B: Support" onclick='choiceClassmate(1,0)'>
+      </form>
+    </section>
+
+    <section id="povclassmategoodchoice1">
+      <center>
+        <video id="classmategoodchoice1">
+          <source src="video/classmate/classmate_good_choice_1.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povclassmatebadchoice1">
+      <center>
+        <video id="classmatebadchoice1">
+          <source src="video/classmate/classmate_bad_choice_1.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povclassmatesection2">
+      <center>
+        <video id="classmatesecondchoice">
+          <source src="video/classmate/classmate_choice_2.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povclassmate2">
+        <p id="usernamec2">Choose an option</p>
+        <input type="button" value="Option A: Ask for help" onclick='choiceClassmate(2,0)'>
+        <input type="button" value="Option B: Throw a pen" onclick='choiceClassmate(2,1)'>
+      </form>
+    </section>
+
+    <section id="povclassmategoodchoice2">
+      <center>
+        <video id="classmategoodchoice2">
+          <source src="video/classmate/classmate_good_choice_2.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povclassmatebadchoice2">
+      <center>
+        <video id="classmatebadchoice2">
+          <source src="video/classmate/classmate_bad_choice_2.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povclassmatesection3">
+      <center>
+        <video id="classmatethirdchoice">
+          <source src="video/classmate/classmate_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povclassmate3">
+        <p id="usernamec3">Choose an option</p>
+        <input type="button" value="Option A: Share lunch" onclick='choiceClassmate(3,0)'>
+        <input type="button" value="Option B: Ignore" onclick='choiceClassmate(3,1)'>
+      </form>
+    </section>
+
+    <section id="povclassmategoodchoice3">
+      <center>
+        <video id="classmategoodchoice3">
+          <source src="video/classmate/classmate_good_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povclassmatebadchoice3">
+      <center>
+        <video id="classmatebadchoice3">
+          <source src="video/classmate/classmate_bad_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteachersection1">
+      <center>
+        <video id="teacherfirstchoice">
+          <source src="video/teacher/teacher_choice_one.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povteacher1">
+        <p id="usernamet1">Choose an option</p>
+        <input type="button" value="Option A: Support" onclick='choiceTeacher(1,0)'>
+        <input type="button" value="Option B: Ignore" onclick='choiceTeacher(1,1)'>
+      </form>
+    </section>
+
+    <section id="povteachergoodchoice1">
+      <center>
+        <video id="teachergoodchoice1">
+          <source src="video/teacher/teacher_good_choice_1.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteacherbadchoice1">
+      <center>
+        <video id="teacherbadchoice1">
+          <source src="video/teacher/teacher_bad_choice_1.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteachersection2">
+      <center>
+        <video id="teachersecondchoice">
+          <source src="video/teacher/teacher_choice_two.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povteacher2">
+        <p id="usernamet2">Choose an option</p>
+        <input type="button" value="Option A: Help" onclick='choiceTeacher(2,0)'>
+        <input type="button" value="Option B: Ignore" onclick='choiceTeacher(2,1)'>
+      </form>
+    </section>
+
+    <section id="povteachergoodchoice2">
+      <center>
+        <video id="teachergoodchoice2">
+          <source src="video/teacher/teacher_good_choice_2.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteacherbadchoice2">
+      <center>
+        <video id="teacherbadchoice2">
+          <source src="video/teacher/teacher_bad_choice_2.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteachersection3">
+      <center>
+        <video id="teacherthirdchoice">
+          <source src="video/teacher/teacher_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+      <form id="povteacher3">
+        <p id="usernamet3">Choose an option</p>
+        <input type="button" value="Option A: Leave kid alone" onclick='choiceTeacher(3,1)'>
+        <input type="button" value="Option B: Ask someone to share lunch" onclick='choiceTeacher(3,0)'>
+      </form>
+      <hr>
+    </section>
+
+    <section id="povteachergoodchoice3">
+      <center>
+        <video id="teachergoodchoice3">
+          <source src="video/teacher/teacher_good_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="povteacherbadchoice3">
+      <center>
+        <video id="teacherbadchoice3">
+          <source src="video/teacher/teacher_bad_choice_3.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="goodending">
+      <center>
+        <video id="goodendingvideo">
+          <source src="video/end/end_good.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="badending">
+      <center>
+        <video id="badendingvideo">
+          <source src="video/end/end_bad.mp4" type="video/mp4">
+        </video>
+      </center>
+    </section>
+
+    <section id="calltoaction">
+      <form id="calltoactionform">
+        <p id="calltoactiontext">Game is over</p>
+        <input type="button" value="Start Over" onclick='startover()'>
+      </form>
+      <hr>
+    </section>
+
+    <script type='text/javascript'>
+      document.getElementById('firstvideo').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('choosepovform').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatefirstchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmate1').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmategoodchoice1').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmategoodchoice1').style.display = 'none';
+        document.getElementById('povclassmatesection2').style.display = 'block';
+        document.getElementById("classmatesecondchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatebadchoice1').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+          document.getElementById('povclassmatebadchoice1').style.display = 'none';
+          document.getElementById('povclassmatesection2').style.display = 'block';
+          document.getElementById("classmatesecondchoice").play();
+        }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatesecondchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmate2').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmategoodchoice2').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmategoodchoice2').style.display = 'none';
+        document.getElementById('povclassmatesection3').style.display = 'block';
+        document.getElementById("classmatethirdchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatebadchoice2').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmatebadchoice2').style.display = 'none';
+        document.getElementById('povclassmatesection3').style.display = 'block';
+        document.getElementById("classmatethirdchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatethirdchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povclassmate3').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmategoodchoice3').addEventListener('ended',ending,false);
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('classmatebadchoice3').addEventListener('ended',ending,false);
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teacherfirstchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteacher1').style.display = 'block'; 
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teachergoodchoice1').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteachergoodchoice1').style.display = 'none';
+        document.getElementById('povteachersection2').style.display = 'block';
+        document.getElementById("teachersecondchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teacherbadchoice1').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+          document.getElementById('povteacherbadchoice1').style.display = 'none';
+          document.getElementById('povteachersection2').style.display = 'block';
+          document.getElementById("teachersecondchoice").play();
+        }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teachersecondchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteacher2').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teachergoodchoice2').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteachergoodchoice2').style.display = 'none';
+        document.getElementById('povteachersection3').style.display = 'block';
+        document.getElementById("teacherthirdchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teacherbadchoice2').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteacherbadchoice2').style.display = 'none';
+        document.getElementById('povteachersection3').style.display = 'block';
+        document.getElementById("teacherthirdchoice").play();
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teacherthirdchoice').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+        document.getElementById('povteacher3').style.display = 'block';
+      }
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teachergoodchoice3').addEventListener('ended', ending,false);
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('teacherbadchoice3').addEventListener('ended', ending,false);
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('goodendingvideo').addEventListener('ended',calltoaction,false);
+    </script>
+
+    <script type='text/javascript'>
+      document.getElementById('badendingvideo').addEventListener('ended',calltoaction,false);
+    </script>
+  </body>
+</html>
